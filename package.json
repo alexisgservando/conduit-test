@@ -1,0 +1,27 @@
+{
+  "name": "realworld-test-framework",
+  "version": "1.0.0",
+  "description": "A CodeceptJS and Playwright E2E test framework for the RealWorld demo site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "test:headless": "npx codeceptjs run --headless --steps",
+    "test:ui": "npx codeceptjs ui",
+    "generate:test": "npx codeceptjs gt",
+    "init": "npx codeceptjs init"
+  },
+  "keywords": [
+    "CodeceptJS",
+    "Playwright",
+    "E2E",
+    "automation",
+    "testing"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.5.15",
+    "playwright": "^1.44.1",
+    "chance": "latest"
+  }
+}
