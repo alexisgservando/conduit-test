@@ -6,6 +6,7 @@ const chance = new Chance();
 
 Feature("RealWorld App E2E Tests");
 
+// Scenario 1: User Registration
 Scenario("should allow a new user to register", async ({ I }) => {
   const user = {
     username: (chance.first() + chance.last() + chance.animal()).replace(/\s/g, ''),
@@ -36,7 +37,7 @@ Scenario("should show error message when login fails (Known Issue)", async ({ I 
     password: "password",
   };
 
-  I.say("⚠️ This login feature is currently broken due to 401 error on valid credentials.");
+  I.say("This login feature is currently broken due to 401 error on valid credentials.");
   I.amOnPage("/#/login");
 
   I.say("Filling out login form with valid credentials (known to fail)");
